@@ -1,6 +1,9 @@
 package test;
 
+import com.design.pattern.singleton.Config;
 import com.design.pattern.singleton.UserInformation;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
@@ -32,6 +35,18 @@ public class Singleton {
 
         // true 가 됩니다.
         System.out.println(userInformation1 == userInformation2);
+
+
+        Runtime runtime = Runtime.getRuntime();
+
+        System.out.println(runtime.maxMemory());
+        System.out.println(runtime.totalMemory());
+
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
+        String hello1 = (String) applicationContext.getBean("helloBean");
+        String hello2 = (String) applicationContext.getBean("helloBean");
+
+        System.out.println(hello1 == hello2); // true
 
     }
 }
