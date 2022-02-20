@@ -8,13 +8,13 @@ public interface ShipFactory {
         prepareFor(name);
 
         // 각각의 배 생성시 마다 달라져야 하는 부분 => 구현하지 않고 둔다.
-        Ship ship = customizing(name);
+        Ship ship = createShip(name);
         sendEmail(email);
 
         return ship;
     }
 
-    Ship customizing(String name);
+    Ship createShip(String name);
 
     private void validate(String name, String email) {
         if (name == null || name.isEmpty()) {
