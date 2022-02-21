@@ -1,4 +1,4 @@
-package test;
+package com.design.pattern.singleton.test;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

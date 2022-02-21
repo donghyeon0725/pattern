@@ -1,4 +1,4 @@
-package test;
+package com.design.pattern.singleton.test;
 
 import com.design.pattern.singleton.Config;
 import com.design.pattern.singleton.UserInformation;

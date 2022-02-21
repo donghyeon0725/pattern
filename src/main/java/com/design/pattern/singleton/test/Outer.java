@@ -1,4 +1,4 @@
-package test;
+package com.design.pattern.singleton.test;
 
 public class Outer
 {
