@@ -1,6 +1,8 @@
 package com.design.pattern.abstractFactory.after;
 
-public class WhiteshipFactory implements ShipFactory {
+import org.springframework.beans.factory.FactoryBean;
+
+public class WhiteshipFactory implements ShipFactory, FactoryBean<Ship> {
 
     private ShipPartsFactory shipPartsFactory;
 
@@ -16,5 +18,15 @@ public class WhiteshipFactory implements ShipFactory {
         ship.setWheel(shipPartsFactory.createWheel());
 
         return ship;
+    }
+
+    @Override
+    public Ship getObject() throws Exception {
+        return createShip();
+    }
+
+    @Override
+    public Class<?> getObjectType() {
+        return Ship.class;
     }
 }
