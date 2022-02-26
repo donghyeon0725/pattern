@@ -1,6 +1,6 @@
 package com.design.pattern.objectStructure.bridge.after;
 
-public class DefaultChampion implements Champion {
+public abstract class DefaultChampion implements Champion {
 
     private String name;
 
