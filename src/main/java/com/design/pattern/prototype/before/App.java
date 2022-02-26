@@ -5,7 +5,7 @@ public class App {
         // Github 에서 받아온 객체라고 가정 (GithubIssue 내부에 있다고 가정)
         GithubRepository repository = new GithubRepository();
 
-        repository.setName("whiteship");
+        repository.setUser("whiteship");
         repository.setName("live-study");
 
 
