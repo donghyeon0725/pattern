@@ -7,7 +7,7 @@
         <constructor-arg value="hello" />
     </bean>
 
-    <bean id="shipPartsFactory" class="com.design.pattern.abstractFactory.after.WhiteshipPartsFactory" />
+    <bean id="shipPartsFactory" class="com.design.pattern.objectCreate.abstractFactory.after.WhiteshipPartsFactory" />
 
-    <bean id="whiteship" class="com.design.pattern.abstractFactory.after.WhiteshipFactory" autowire="constructor"/>
+    <bean id="whiteship" class="com.design.pattern.objectCreate.abstractFactory.after.WhiteshipFactory" autowire="constructor"/>
 </beans>
