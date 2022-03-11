@@ -1,6 +1,5 @@
-package com.design.pattern.objectAction.visitor.after;
+package com.design.pattern.objectAction.visitor.after2;
 
 public interface Shape {
-    void accept(Phone phone);
-    void accept(Watch watch);
+    void accept(Device device);
 }

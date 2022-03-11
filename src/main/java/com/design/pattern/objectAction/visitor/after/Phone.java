@@ -1,4 +1,4 @@
-package com.design.pattern.objectAction.visitor.before;
+package com.design.pattern.objectAction.visitor.after;
 
 public class Phone implements Device {
 }

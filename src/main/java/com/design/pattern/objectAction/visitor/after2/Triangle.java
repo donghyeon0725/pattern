@@ -1,14 +1,9 @@
-package com.design.pattern.objectAction.visitor.after;
+package com.design.pattern.objectAction.visitor.after2;
 
 public class Triangle implements Shape {
 
     @Override
-    public void accept(Phone phone) {
-        System.out.println("print Triangle to phone");
-    }
-
-    @Override
-    public void accept(Watch watch) {
-        System.out.println("print Triangle to watch");
+    public void accept(Device device) {
+        device.print(this);
     }
 }
