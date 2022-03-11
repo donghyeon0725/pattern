@@ -1,6 +1,6 @@
 package com.design.pattern.objectAction.strategy.after;
 
-public class ConcreteStrategy3 implements Strategy {
+public class Faster implements Strategy {
     @Override
     public void blueLight() {
         System.out.println("무궁홖이");

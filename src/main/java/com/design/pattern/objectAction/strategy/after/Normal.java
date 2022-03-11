@@ -1,6 +1,6 @@
 package com.design.pattern.objectAction.strategy.after;
 
-public class ConcreteStrategy2 implements Strategy {
+public class Normal implements Strategy {
     @Override
     public void blueLight() {
         System.out.println("무궁화꽃이");
