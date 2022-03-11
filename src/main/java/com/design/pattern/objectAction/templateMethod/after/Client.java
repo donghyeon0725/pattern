@@ -1,4 +1,7 @@
-package com.design.pattern.objectAction.templateMethod.before;
+package com.design.pattern.objectAction.templateMethod.after;
+
+import com.design.pattern.objectAction.templateMethod.before.FileProcessor;
+import com.design.pattern.objectAction.templateMethod.before.MultiplyFileProcessor;
 
 public class Client {
     public static void main(String[] args) {
